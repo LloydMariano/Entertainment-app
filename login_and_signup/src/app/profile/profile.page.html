@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title style="display: inline-block;">Profile</ion-title>
+    <a href="\home" class="out"><ion-icon name="power-outline" class="ion-float-right " size="large"></ion-icon></a>
+  </ion-toolbar>
+</ion-header>
+<br>
+<ion-content>
+  <ion-icon name="person-circle-outline" class="avatar" ></ion-icon>
+  <ion-label class="ion-text-center" style="display: inline-block;">John Lloyd Mariano</ion-label>
+  <form [formGroup]="profileForm">
+    <ion-list>
+      <ion-item>
+    <ion-label position="fixed">Name:</ion-label>
+    <ion-input  type="text" formControlName="fullname"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="fixed">Course:</ion-label>
+    <ion-input  type="text" formControlName="course"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="fixed">Year:</ion-label>
+    <ion-input  type="text" formControlName="idnum"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="fixed">School:</ion-label>
+    <ion-input  type="text" formControlName="school"></ion-input>
+  </ion-item>
+
+  </ion-list>
+  <ion-button (click)="update()" color="secondary" class="btn-sub">update</ion-button>
+  </form>
+</ion-content>

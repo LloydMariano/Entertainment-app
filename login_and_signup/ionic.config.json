@@ -1,0 +1,7 @@
+{
+  "name": "login_and_signup",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
